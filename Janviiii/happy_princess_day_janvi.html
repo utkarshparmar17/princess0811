@@ -1,0 +1,1057 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>For Princess Janvi 💌</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Great+Vibes&family=Nunito:wght@400;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet" />
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            cream: '#fff9f5',
+            blushBg: '#fbe7ee',
+            softPink: '#f7cad8',
+            roseInk: '#9c2d48',
+            cherryRed: '#b92b27',
+            warmPaper: '#fbf3c8',
+          },
+          fontFamily: {
+            cursive: ['"Great Vibes"', 'cursive'],
+            hand: ['Caveat', 'cursive'],
+            serif: ['"Playfair Display"', 'serif'],
+            sans: ['Nunito', 'sans-serif'],
+          },
+          animation: {
+            'float-gentle': 'floatGentle 3.6s ease-in-out infinite',
+            'pulse-heart': 'pulseHeart 1.8s ease-in-out infinite',
+            'spin-reel': 'spin 4s linear infinite',
+            'wiggle-slow': 'wiggleSlow 2.8s ease-in-out infinite',
+          },
+          keyframes: {
+            floatGentle: {
+              '0%, 100%': { transform: 'translateY(0px)' },
+              '50%': { transform: 'translateY(-7px)' },
+            },
+            pulseHeart: {
+              '0%, 100%': { transform: 'scale(1)' },
+              '50%': { transform: 'scale(1.1)' },
+            },
+            wiggleSlow: {
+              '0%, 100%': { transform: 'rotate(-2deg)' },
+              '50%': { transform: 'rotate(2deg)' },
+            },
+          },
+        },
+      },
+    };
+  </script>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      background-color: #f3dce4;
+      font-family: 'Nunito', sans-serif;
+      color: #5e2334;
+      overflow-x: hidden;
+    }
+
+    /* Pastel Striped Scrapbook Wallpaper (Screenshot 2 vibe) */
+    .striped-wallpaper {
+      background-color: #fff8f6;
+      background-image: repeating-linear-gradient(
+        90deg,
+        #fff8f6 0px,
+        #fff8f6 18px,
+        #fae4ec 18px,
+        #fae4ec 36px
+      );
+    }
+
+    /* Pastel Starry Scrapbook Wallpaper (Screenshot 1 & 3 vibe) */
+    .starry-pink-wallpaper {
+      background: radial-gradient(circle at 20% 20%, #fff4f8 0%, #f8dce6 55%, #f3cbd9 100%);
+    }
+
+    /* Lined Notebook Paper */
+    .lined-note {
+      background-color: #fcf4c9;
+      background-image: repeating-linear-gradient(
+        to bottom,
+        transparent 0px,
+        transparent 25px,
+        rgba(176, 136, 94, 0.24) 26px
+      );
+      line-height: 26px;
+    }
+
+    /* Stitched Pink Star Decoration */
+    .stitched-star {
+      filter: drop-shadow(0 3px 6px rgba(156, 45, 72, 0.16));
+    }
+
+    /* Ornate Vintage Pink Oval Mirror Frame */
+    .vintage-mirror-outer {
+      background: linear-gradient(145deg, #f9c6d7 0%, #eb9ab5 45%, #f7bfd2 75%, #df83a2 100%);
+      padding: 14px;
+      border-radius: 50% / 46%;
+      box-shadow:
+        0 14px 30px rgba(156, 45, 72, 0.24),
+        inset 0 2px 5px rgba(255, 255, 255, 0.85),
+        inset 0 -4px 8px rgba(168, 66, 95, 0.45);
+      border: 3px dashed #fff3f7;
+    }
+
+    .vintage-mirror-inner {
+      border-radius: 50% / 46%;
+      overflow: hidden;
+      border: 4px solid #fff7fa;
+      box-shadow: inset 0 4px 12px rgba(94, 35, 52, 0.25);
+      background: #fff;
+    }
+
+    /* Envelope Pocket & Flap */
+    .envelope-pocket {
+      clip-path: polygon(0 0, 50% 42%, 100% 0, 100% 100%, 0 100%);
+      background: linear-gradient(180deg, #c6312c 0%, #9f1f1b 100%);
+    }
+
+    /* Shake Animation */
+    @keyframes shakeBox {
+      0%, 100% { transform: translateX(0); }
+      20% { transform: translateX(-8px); }
+      40% { transform: translateX(8px); }
+      60% { transform: translateX(-5px); }
+      80% { transform: translateX(5px); }
+    }
+    .animate-shake {
+      animation: shakeBox 0.4s ease-in-out;
+    }
+
+    /* Smooth Screen Fade */
+    .screen-panel {
+      transition: opacity 0.45s ease, transform 0.45s ease;
+    }
+
+    /* Custom Scrollbar inside Phone Frame */
+    .phone-scroll::-webkit-scrollbar {
+      width: 4px;
+    }
+    .phone-scroll::-webkit-scrollbar-thumb {
+      background: rgba(185, 43, 39, 0.28);
+      border-radius: 999px;
+    }
+  </style>
+</head>
+<body class="min-h-screen flex items-center justify-center sm:py-4">
+
+  <!-- ===================================================================== -->
+  <!-- MOBILE-FIRST PHONE VIEWPORT CONTAINER (Max 430px on Desktop, 100% Mobile) -->
+  <!-- ===================================================================== -->
+  <div id="phoneAppShell" class="relative w-full max-w-[430px] min-h-screen sm:min-h-[820px] sm:max-h-[880px] sm:rounded-[38px] sm:border-[6px] sm:border-white sm:shadow-[0_24px_60px_rgba(120,40,65,0.28)] overflow-hidden flex flex-col bg-cream">
+
+    <!-- Floating Decorative Stars & Hearts Layer -->
+    <div id="floatingParticlesLayer" class="pointer-events-none absolute inset-0 overflow-hidden z-10"></div>
+
+    <!-- =================================================================== -->
+    <!-- PERSISTENT MINI CASSETTE MUSIC BAR ("Dilruba Dilnasheen")          -->
+    <!-- =================================================================== -->
+    <div id="musicBar" class="hidden sticky top-0 z-40 px-3 pt-2.5 pb-1.5 bg-white/80 backdrop-blur-md border-b border-pink-200/80">
+      <div class="flex items-center justify-between gap-2 bg-gradient-to-r from-[#fff0f5] via-[#ffe6ef] to-[#fff5e9] border border-pink-300/70 rounded-2xl px-3 py-2 shadow-sm">
+        <!-- Mini Pink Cassette Icon with Spinning Reels -->
+        <div class="flex items-center gap-2.5 min-w-0">
+          <div class="w-11 h-7 rounded-lg bg-[#f497b6] border border-[#9c2d48]/40 flex items-center justify-around px-1.5 shrink-0 shadow-inner">
+            <span id="reelLeft" class="w-3 h-3 rounded-full bg-white border-2 border-[#5e2334] inline-block"></span>
+            <span class="w-2 h-1.5 bg-[#5e2334]/70 rounded-xs"></span>
+            <span id="reelRight" class="w-3 h-3 rounded-full bg-white border-2 border-[#5e2334] inline-block"></span>
+          </div>
+          <div class="min-w-0">
+            <p class="text-[11px] font-extrabold text-roseInk truncate flex items-center gap-1">
+              <span>Dilruba Dilnasheen — Rito Riba &amp; Siddhant Kaushal</span>
+              <span id="musicNoteEmoji" class="inline-block">🎵</span>
+            </p>
+            <p id="musicSubtitle" class="text-[10px] text-[#8d4b5e] truncate">Tap to play song • For Janvi</p>
+          </div>
+        </div>
+
+        <!-- Play / Pause Toggle Button -->
+        <button
+          id="musicToggleBtn"
+          type="button"
+          class="shrink-0 px-3 py-1.5 rounded-xl bg-roseInk text-white text-[11px] font-bold shadow-sm active:scale-95 transition flex items-center gap-1"
+        >
+          <span id="musicPlayIcon">▶</span>
+          <span id="musicPlayLabel">Play</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Off-screen 1x1 YouTube IFrame Player Container (Prevents mobile background throttling) -->
+    <div id="ytPlayerWrapper" style="position: fixed; bottom: 0; right: 0; width: 1px; height: 1px; opacity: 0.01; pointer-events: none; z-index: -1; overflow: hidden;">
+      <div id="ytDilrubaPlayer"></div>
+    </div>
+
+    <!-- =================================================================== -->
+    <!-- SCREEN 0: CUTE PASTEL SCRAPBOOK LOGIN PAGE                          -->
+    <!-- =================================================================== -->
+    <section id="screenLogin" class="screen-panel relative z-20 flex-1 striped-wallpaper flex flex-col items-center justify-center px-5 py-8">
+      <!-- Top Cute Ribbon Pill -->
+      <div class="mb-4 px-4 py-1.5 rounded-full bg-white/90 border border-pink-300 shadow-sm text-xs font-bold text-roseInk tracking-wide flex items-center gap-1.5">
+        <span>🎀</span>
+        <span>Private Diary • Princess Day Edition</span>
+        <span>🎀</span>
+      </div>
+
+      <!-- Scrapbook Login Card -->
+      <div id="loginCardBox" class="w-full bg-white/95 rounded-3xl p-6 border-2 border-dashed border-pink-300 shadow-[0_12px_32px_rgba(185,43,39,0.12)] relative">
+        <!-- Cute Corner Tape Strips -->
+        <div class="w-16 h-4 bg-pink-200/80 rotate-[-12deg] absolute -top-2 left-5 rounded-sm"></div>
+        <div class="w-16 h-4 bg-amber-100/90 rotate-[10deg] absolute -top-2 right-5 rounded-sm"></div>
+
+        <div class="text-center mb-5">
+          <div class="w-16 h-16 mx-auto mb-3 rounded-2xl bg-blushBg border-2 border-pink-200 flex items-center justify-center text-3xl animate-float-gentle shadow-sm">
+            💌
+          </div>
+          <h1 class="font-cursive text-4xl text-roseInk leading-tight">
+            Hey Janvi...
+          </h1>
+          <p class="text-xs text-[#7d4253] mt-1 font-semibold">
+            I made a small diary page just for you. Unlock it with your name &amp; secret code ✨
+          </p>
+        </div>
+
+        <form id="loginForm" class="space-y-3.5" novalidate>
+          <div>
+            <label for="loginUsername" class="block text-xs font-bold text-roseInk mb-1 ml-1">
+              Your Name (Username)
+            </label>
+            <input
+              id="loginUsername"
+              type="text"
+              autocomplete="off"
+              placeholder="Enter janvi..."
+              class="w-full px-4 py-3 rounded-2xl bg-[#fff8fa] border-2 border-pink-200 text-sm font-bold text-[#5e2334] placeholder-pink-300 focus:outline-none focus:border-roseInk transition"
+              required
+            />
+          </div>
+
+          <div>
+            <div class="flex items-center justify-between mb-1 px-1">
+              <label for="loginPassword" class="text-xs font-bold text-roseInk">
+                Secret Code (Password)
+              </label>
+              <button
+                type="button"
+                id="loginHintBtn"
+                class="text-[11px] font-bold text-[#b84a66] underline decoration-dotted"
+              >
+                Hint?
+              </button>
+            </div>
+            <input
+              id="loginPassword"
+              type="password"
+              inputmode="numeric"
+              placeholder="••••"
+              class="w-full px-4 py-3 rounded-2xl bg-[#fff8fa] border-2 border-pink-200 text-sm font-bold tracking-widest text-[#5e2334] placeholder-pink-300 focus:outline-none focus:border-roseInk transition"
+              required
+            />
+          </div>
+
+          <div id="loginHintText" class="hidden rounded-2xl bg-warmPaper/80 border border-amber-200 px-3.5 py-2 text-xs text-[#6e472b] font-semibold">
+            🌸 Username is <span class="underline">janvi</span> &amp; password is <span class="font-mono font-bold">0811</span>
+          </div>
+
+          <div id="loginErrorText" class="hidden rounded-2xl bg-red-50 border border-red-200 px-3.5 py-2.5 text-xs font-bold text-cherryRed text-center">
+            Oops! Only Janvi can open this diary — try <span class="underline">janvi</span> &amp; <span class="font-mono">0811</span> 💗
+          </div>
+
+          <button
+            type="submit"
+            class="w-full py-3.5 rounded-2xl bg-gradient-to-r from-[#d94e6f] to-[#b92b27] text-white font-extrabold text-sm tracking-wide shadow-[0_8px_20px_rgba(185,43,39,0.28)] active:scale-[0.98] transition flex items-center justify-center gap-2"
+          >
+            <span>Open My Princess Mail</span>
+            <span>🌷</span>
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- =================================================================== -->
+    <!-- SCREEN 1: CUTE BOUQUET HOLDER ("for you!" + "Click me" Heart)       -->
+    <!-- =================================================================== -->
+    <section id="screenBouquet" class="screen-panel hidden relative z-20 flex-1 striped-wallpaper flex flex-col items-center justify-between px-5 py-7 text-center">
+      <!-- Top Little Note -->
+      <div class="mt-2">
+        <span class="inline-block px-3.5 py-1 rounded-full bg-white/90 border border-pink-200 text-[11px] font-bold text-roseInk shadow-xs">
+          Happy Princess Day, Janvi 👑
+        </span>
+      </div>
+
+      <!-- Center Cute Otter/Teddy Holding Colorful Flower Bouquet SVG (Matches Screenshot 2) -->
+      <div class="my-auto flex flex-col items-center">
+        <div class="relative w-72 h-72 flex items-center justify-center animate-float-gentle">
+          <svg viewBox="0 0 320 310" class="w-full h-full drop-shadow-[0_12px_18px_rgba(130,55,75,0.16)]" xmlns="http://www.w3.org/2000/svg">
+            <!-- Bouquet Cone Paper -->
+            <path d="M72 152 L175 135 L156 268 L128 268 Z" fill="#dfc08c" stroke="#5e3a24" stroke-width="3.5" stroke-linejoin="round"/>
+            <path d="M84 152 L138 258" stroke="#c49f64" stroke-width="2.5" stroke-linecap="round"/>
+
+            <!-- Green Leaves -->
+            <ellipse cx="75" cy="142" rx="18" ry="9" transform="rotate(-25 75 142)" fill="#58b348" stroke="#366e2c" stroke-width="3"/>
+            <ellipse cx="164" cy="112" rx="18" ry="9" transform="rotate(30 164 112)" fill="#58b348" stroke="#366e2c" stroke-width="3"/>
+            <ellipse cx="122" cy="96" rx="16" ry="8" transform="rotate(-70 122 96)" fill="#6bc75a" stroke="#366e2c" stroke-width="3"/>
+
+            <!-- Cute Love Envelope Tucked in Bouquet -->
+            <g transform="translate(56, 106) rotate(-18)">
+              <rect x="0" y="0" width="44" height="30" rx="5" fill="#fffdf9" stroke="#4a2c2a" stroke-width="3"/>
+              <path d="M2 2 L22 17 L42 2" fill="none" stroke="#4a2c2a" stroke-width="2.5" stroke-linecap="round"/>
+              <path d="M22 13 C20 10, 15 11, 15 15 C15 19, 22 23, 22 23 C22 23, 29 19, 29 15 C29 11, 24 10, 22 13 Z" fill="#e63946"/>
+            </g>
+
+            <!-- Pink Tulip -->
+            <g transform="translate(115, 76)">
+              <path d="M0 18 C0 4, 24 4, 24 18 C24 28, 18 33, 12 33 C6 33, 0 28, 0 18 Z" fill="#f78da7" stroke="#6e2c3e" stroke-width="3"/>
+              <path d="M5 10 L12 18 L19 10" fill="none" stroke="#6e2c3e" stroke-width="2.5" stroke-linecap="round"/>
+            </g>
+
+            <!-- Red Rose -->
+            <g transform="translate(154, 108)">
+              <circle cx="0" cy="0" r="16" fill="#e63946" stroke="#5e1b24" stroke-width="3"/>
+              <path d="M-7 -3 C-4 -9, 6 -8, 7 -1 C8 5, -2 8, -5 3" fill="none" stroke="#9e1925" stroke-width="2.5" stroke-linecap="round"/>
+            </g>
+
+            <!-- White Daisy -->
+            <g transform="translate(116, 124)">
+              <circle cx="0" cy="-11" r="6" fill="#fff" stroke="#5e3a24" stroke-width="2.2"/>
+              <circle cx="10" cy="-4" r="6" fill="#fff" stroke="#5e3a24" stroke-width="2.2"/>
+              <circle cx="7" cy="8" r="6" fill="#fff" stroke="#5e3a24" stroke-width="2.2"/>
+              <circle cx="-7" cy="8" r="6" fill="#fff" stroke="#5e3a24" stroke-width="2.2"/>
+              <circle cx="-10" cy="-4" r="6" fill="#fff" stroke="#5e3a24" stroke-width="2.2"/>
+              <circle cx="0" cy="0" r="6.5" fill="#ffd166" stroke="#5e3a24" stroke-width="2.2"/>
+            </g>
+
+            <!-- Coral Flower -->
+            <g transform="translate(94, 156)">
+              <circle cx="0" cy="-10" r="7" fill="#ff8fa3" stroke="#6e2c3e" stroke-width="2.2"/>
+              <circle cx="10" cy="-2" r="7" fill="#ff8fa3" stroke="#6e2c3e" stroke-width="2.2"/>
+              <circle cx="6" cy="9" r="7" fill="#ff8fa3" stroke="#6e2c3e" stroke-width="2.2"/>
+              <circle cx="-6" cy="9" r="7" fill="#ff8fa3" stroke="#6e2c3e" stroke-width="2.2"/>
+              <circle cx="-10" cy="-2" r="7" fill="#ff8fa3" stroke="#6e2c3e" stroke-width="2.2"/>
+              <circle cx="0" cy="0" r="6" fill="#ffe066" stroke="#6e2c3e" stroke-width="2.2"/>
+            </g>
+
+            <!-- Lavender Flower -->
+            <g transform="translate(136, 158)">
+              <circle cx="0" cy="-10" r="7" fill="#c77dff" stroke="#4a256b" stroke-width="2.2"/>
+              <circle cx="10" cy="-2" r="7" fill="#c77dff" stroke="#4a256b" stroke-width="2.2"/>
+              <circle cx="6" cy="9" r="7" fill="#c77dff" stroke="#4a256b" stroke-width="2.2"/>
+              <circle cx="-6" cy="9" r="7" fill="#c77dff" stroke="#4a256b" stroke-width="2.2"/>
+              <circle cx="-10" cy="-2" r="7" fill="#c77dff" stroke="#4a256b" stroke-width="2.2"/>
+              <circle cx="0" cy="0" r="6" fill="#ffd166" stroke="#4a256b" stroke-width="2.2"/>
+            </g>
+
+            <!-- Cute Otter / Bear Character Holding the Bouquet -->
+            <g transform="translate(162, 114)">
+              <!-- Tail -->
+              <path d="M62 135 Q96 125 88 152 Q80 168 56 162" fill="#a8763e" stroke="#4a2e16" stroke-width="3.5" stroke-linecap="round"/>
+              <!-- Body -->
+              <ellipse cx="32" cy="115" rx="38" ry="52" fill="#b68246" stroke="#4a2e16" stroke-width="3.5"/>
+              <!-- Belly Patch -->
+              <ellipse cx="26" cy="118" rx="22" ry="34" fill="#e6c496"/>
+              <!-- Ears -->
+              <circle cx="4" cy="16" r="10" fill="#a8763e" stroke="#4a2e16" stroke-width="3.5"/>
+              <circle cx="58" cy="20" r="10" fill="#a8763e" stroke="#4a2e16" stroke-width="3.5"/>
+              <!-- Head -->
+              <ellipse cx="31" cy="42" rx="34" ry="29" fill="#b68246" stroke="#4a2e16" stroke-width="3.5"/>
+              <!-- Snout -->
+              <ellipse cx="26" cy="50" rx="14" ry="10" fill="#f3dec0"/>
+              <!-- Eyes -->
+              <circle cx="15" cy="40" r="4.5" fill="#2b180a"/>
+              <circle cx="13.8" cy="38.5" r="1.5" fill="#fff"/>
+              <circle cx="42" cy="42" r="4.5" fill="#2b180a"/>
+              <circle cx="40.8" cy="40.5" r="1.5" fill="#fff"/>
+              <!-- Blush Cheeks -->
+              <ellipse cx="8" cy="49" rx="5.5" ry="3.2" fill="#f28482" opacity="0.75"/>
+              <ellipse cx="48" cy="51" rx="5.5" ry="3.2" fill="#f28482" opacity="0.75"/>
+              <!-- Nose & Cute Smile -->
+              <ellipse cx="26" cy="46" rx="4" ry="2.8" fill="#3d2310"/>
+              <path d="M21 52 Q26 57 30 52" fill="none" stroke="#3d2310" stroke-width="2.5" stroke-linecap="round"/>
+              <!-- Whiskers -->
+              <line x1="56" y1="46" x2="70" y2="43" stroke="#4a2e16" stroke-width="2.2" stroke-linecap="round"/>
+              <line x1="56" y1="52" x2="70" y2="53" stroke="#4a2e16" stroke-width="2.2" stroke-linecap="round"/>
+              <!-- Paws Holding Bouquet -->
+              <ellipse cx="-2" cy="96" rx="12" ry="8" transform="rotate(-15 -2 96)" fill="#b68246" stroke="#4a2e16" stroke-width="3"/>
+              <ellipse cx="14" cy="116" rx="13" ry="8" transform="rotate(10 14 116)" fill="#b68246" stroke="#4a2e16" stroke-width="3"/>
+              <!-- Feet -->
+              <ellipse cx="14" cy="166" rx="12" ry="7" fill="#a8763e" stroke="#4a2e16" stroke-width="3"/>
+              <ellipse cx="44" cy="166" rx="12" ry="7" fill="#a8763e" stroke="#4a2e16" stroke-width="3"/>
+            </g>
+
+            <!-- Big Red Ribbon Bow on Bouquet -->
+            <g transform="translate(142, 206)">
+              <path d="M0 0 C-22 -16, -34 10, -6 8 Z" fill="#e63946" stroke="#5e1b24" stroke-width="3"/>
+              <path d="M0 0 C22 -16, 34 10, 6 8 Z" fill="#e63946" stroke="#5e1b24" stroke-width="3"/>
+              <path d="M-4 6 L-18 34 L-4 28 Z" fill="#d62828" stroke="#5e1b24" stroke-width="2.8"/>
+              <path d="M4 6 L18 34 L4 28 Z" fill="#d62828" stroke="#5e1b24" stroke-width="2.8"/>
+              <circle cx="0" cy="3" r="6" fill="#ff4d6d" stroke="#5e1b24" stroke-width="2.8"/>
+            </g>
+          </svg>
+        </div>
+
+        <!-- "for you!" + Pulsing Heart "Click me" Button (Screenshot 2) -->
+        <div class="flex items-center justify-center gap-4 mt-1">
+          <p class="font-hand text-4xl font-bold text-[#3b232a] tracking-wide">
+            for you!
+          </p>
+
+          <button
+            id="goToEnvelopeBtn"
+            type="button"
+            class="group relative w-24 h-24 flex items-center justify-center animate-pulse-heart focus:outline-none active:scale-95 transition"
+            aria-label="Click me to open your mail"
+          >
+            <svg viewBox="0 0 100 92" class="w-full h-full drop-shadow-[0_8px_16px_rgba(185,43,39,0.3)]">
+              <path
+                d="M50 86 C50 86, 8 58, 8 29 C8 14, 20 5, 33 5 C42 5, 48 10, 50 16 C52 10, 58 5, 67 5 C80 5, 92 14, 92 29 C92 58, 50 86, 50 86 Z"
+                fill="url(#pinkHeartGrad)"
+                stroke="#fff"
+                stroke-width="3"
+              />
+              <path
+                d="M50 80 C50 80, 14 55, 14 29 C14 18, 23 11, 33 11 C41 11, 47 16, 50 22 C53 16, 59 11, 67 11 C77 11, 86 18, 86 29 C86 55, 50 80, 50 80 Z"
+                fill="none"
+                stroke="#fff"
+                stroke-width="1.5"
+                stroke-dasharray="3 3"
+              />
+              <defs>
+                <linearGradient id="pinkHeartGrad" x1="0" y1="0" x2="100" y2="92" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#e87a96"/>
+                  <stop offset="1" stop-color="#b83b5e"/>
+                </linearGradient>
+              </defs>
+            </svg>
+            <span class="absolute inset-0 flex flex-col items-center justify-center text-white font-serif italic font-bold text-sm leading-tight pt-1">
+              <span>Click</span>
+              <span>me</span>
+            </span>
+          </button>
+        </div>
+      </div>
+
+      <p class="text-xs text-[#8d4b5e] font-semibold">
+        Tap the pink heart to see what arrived in your mailbox 💌
+      </p>
+    </section>
+
+    <!-- =================================================================== -->
+    <!-- SCREEN 2: "You have a mail" INTERACTIVE RED ENVELOPE (Screenshot 1) -->
+    <!-- =================================================================== -->
+    <section id="screenEnvelope" class="screen-panel hidden relative z-20 flex-1 starry-pink-wallpaper flex flex-col items-center justify-between px-4 py-6 text-center">
+      <!-- Cursive Header Title (Screenshot 1) -->
+      <div class="mt-2">
+        <h2 class="font-cursive text-5xl text-cherryRed drop-shadow-[0_2px_0_#ffffff]">
+          You have a mail
+        </h2>
+        <p class="text-xs font-bold text-[#8d4b5e] mt-1">
+          Sent specially for Janvi ✨
+        </p>
+      </div>
+
+      <!-- Interactive Red Envelope Container -->
+      <div class="relative w-full max-w-[330px] h-[350px] my-auto flex items-end justify-center select-none">
+
+        <!-- Envelope Back Flap Triangle -->
+        <div class="absolute bottom-[172px] w-[290px] h-[115px] bg-[#9c1d19] rounded-t-2xl" style="clip-path: polygon(50% 0%, 0% 100%, 100% 100%);"></div>
+
+        <!-- Envelope Inner Dark Cavity -->
+        <div class="absolute bottom-0 w-[290px] h-[185px] bg-[#7a1411] rounded-b-2xl shadow-xl"></div>
+
+        <!-- ITEM 1: Watercolor Princess Card (New Image) Peeking From Top -->
+        <button
+          type="button"
+          id="envItemWatercolor"
+          class="group absolute bottom-[130px] left-1/2 -translate-x-1/2 w-[110px] h-[140px] bg-white p-1 rounded-lg border-2 border-amber-300 shadow-md transition-transform duration-300 hover:-translate-y-3 active:scale-95 z-10"
+          aria-label="Open Princess Day watercolor card"
+        >
+          <div class="w-full h-[110px] rounded overflow-hidden bg-amber-50">
+            <img
+              src="image_50e104.jpg"
+              alt="Princess Day Watercolor Card"
+              onerror="this.src='https://placehold.co/300x400/fbf3c8/9c2d48?text=Princess+Day'"
+              class="w-full h-full object-cover object-top"
+            />
+          </div>
+          <p class="font-hand text-[10px] font-bold text-roseInk mt-0.5">Princess Card 👑</p>
+        </button>
+
+        <!-- ITEM 2: Pink Rose Tucked on the Left -->
+        <button
+          type="button"
+          id="envItemRose"
+          class="absolute bottom-[122px] left-[18px] w-16 h-24 flex flex-col items-center justify-center transition-transform duration-300 hover:-translate-y-2 active:scale-95 z-20"
+          aria-label="Tap pink rose"
+        >
+          <span class="text-4xl drop-shadow">🌷</span>
+          <span class="mt-0.5 px-2 py-0.5 rounded-full bg-white/90 text-[9px] font-bold text-roseInk shadow-xs">
+            For you
+          </span>
+        </button>
+
+        <!-- ITEM 3: Pink Retro Cassette ("Dilruba Dilnasheen") -->
+        <button
+          type="button"
+          id="envItemCassette"
+          class="absolute bottom-[78px] left-[58px] w-[90px] h-[130px] rounded-xl bg-gradient-to-b from-[#f7a8c4] to-[#e87ea4] border-2 border-[#4a1c2a] shadow-lg p-2 flex flex-col justify-between transition-transform duration-300 hover:-translate-y-3 active:scale-95 z-20"
+          aria-label="Play or pause Dilruba Dilnasheen song"
+        >
+          <div class="bg-white/95 rounded-md px-1 py-1 text-center border border-pink-300">
+            <p class="font-hand text-[10px] font-bold text-roseInk leading-none">Dilruba</p>
+            <p class="font-hand text-[9px] font-bold text-[#7d4253] leading-tight">Dilnasheen</p>
+          </div>
+          <div class="my-auto mx-auto w-10 h-14 rounded-lg bg-[#3b1c26] flex flex-col items-center justify-around py-1">
+            <span class="w-3.5 h-3.5 rounded-full bg-white border-2 border-[#f7a8c4]"></span>
+            <span class="w-3.5 h-3.5 rounded-full bg-white border-2 border-[#f7a8c4]"></span>
+          </div>
+          <div class="text-[8px] font-extrabold text-white bg-[#4a1c2a]/80 rounded px-1 py-0.5">
+            🎵 Tap Song
+          </div>
+        </button>
+
+        <!-- ITEM 4: Polaroid Card with Janvi's Uploaded Portrait Sketch -->
+        <button
+          type="button"
+          id="envItemPhoto"
+          class="absolute bottom-[82px] right-[18px] w-[102px] h-[130px] bg-white p-1.5 pb-4 rounded-lg border border-pink-200 shadow-lg rotate-[4deg] transition-transform duration-300 hover:-translate-y-3 hover:rotate-0 active:scale-95 z-20"
+          aria-label="View Janvi's portrait sketch"
+        >
+          <div class="w-full h-[90px] rounded overflow-hidden bg-pink-50">
+            <img
+              src="WhatsApp Image 2026-11-11 at 5.09.50 PM.jpeg"
+              alt="Portrait sketch of Janvi"
+              onerror="this.src='https://placehold.co/300x360/fbe7ee/9c2d48?text=Princess+Janvi'"
+              class="w-full h-full object-cover object-top"
+            />
+          </div>
+          <p class="font-hand text-[11px] font-bold text-roseInk mt-1">Princess Janvi ✨</p>
+        </button>
+
+        <!-- Envelope Front Red Pocket + Instruction Text (Screenshot 1) -->
+        <div class="envelope-pocket relative w-[290px] h-[185px] rounded-b-2xl shadow-[0_14px_28px_rgba(140,20,20,0.3)] flex flex-col items-center justify-end pb-5 px-4 z-30 pointer-events-none">
+          <p class="font-hand text-2xl text-amber-100 leading-tight drop-shadow">
+            Click on items inside<br/>envelope to open them
+          </p>
+        </div>
+      </div>
+
+      <!-- Bottom Direct Action Button to Open Full Mirror & Letter Page -->
+      <div class="w-full max-w-[310px] mb-2">
+        <button
+          id="openMirrorPageBtn"
+          type="button"
+          class="w-full py-3.5 px-5 rounded-2xl bg-white border-2 border-roseInk text-roseInk font-extrabold text-sm shadow-md active:scale-95 transition flex items-center justify-center gap-2"
+        >
+          <span>Open Full Letter &amp; Mirror</span>
+          <span>➡️</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- =================================================================== -->
+    <!-- SCREEN 3: VINTAGE PINK MIRROR + HEARTFELT LETTER (Screenshot 3)     -->
+    <!-- =================================================================== -->
+    <section id="screenMirrorLetter" class="screen-panel hidden relative z-20 flex-1 starry-pink-wallpaper phone-scroll overflow-y-auto px-4 pt-5 pb-10">
+      <!-- Top Back Navigation Pill -->
+      <div class="flex items-center justify-between mb-4">
+        <button
+          id="backToEnvelopeBtn"
+          type="button"
+          class="px-3 py-1.5 rounded-full bg-white/90 border border-pink-200 text-xs font-bold text-roseInk shadow-xs active:scale-95 transition"
+        >
+          ← Back to Envelope
+        </button>
+        <span class="px-3 py-1 rounded-full bg-roseInk/10 text-[11px] font-extrabold text-roseInk">
+          Nov 18 • Princess Day 👑
+        </span>
+      </div>
+
+      <!-- Ornate Vintage Pink Oval Mirror Frame with Janvi's Uploaded Sketch (Screenshot 3) -->
+      <div class="relative flex flex-col items-center my-2">
+        <!-- Decorative Stitched Pink Stars -->
+        <svg class="stitched-star w-12 h-12 absolute -top-2 left-3 text-[#e889a8] -rotate-12" viewBox="0 0 64 64" fill="currentColor">
+          <path d="M32 4 L40 22 L60 24 L45 38 L49 58 L32 48 L15 58 L19 38 L4 24 L24 22 Z" stroke="#fff" stroke-width="2.5" stroke-dasharray="4 3"/>
+        </svg>
+        <svg class="stitched-star w-11 h-11 absolute bottom-10 right-3 text-[#e889a8] rotate-12" viewBox="0 0 64 64" fill="currentColor">
+          <path d="M32 4 L40 22 L60 24 L45 38 L49 58 L32 48 L15 58 L19 38 L4 24 L24 22 Z" stroke="#fff" stroke-width="2.5" stroke-dasharray="4 3"/>
+        </svg>
+
+        <!-- Vintage Oval Mirror -->
+        <div class="vintage-mirror-outer w-[235px] h-[290px]">
+          <div class="vintage-mirror-inner w-full h-full">
+            <img
+              src="WhatsApp Image 2026-11-11 at 5.09.50 PM.jpeg"
+              alt="Pencil portrait sketch of Janvi"
+              onerror="this.src='https://placehold.co/400x500/fbe7ee/9c2d48?text=Princess+Janvi'"
+              class="w-full h-full object-cover object-top"
+            />
+          </div>
+        </div>
+
+        <!-- Cute White Chat Bubbles Under Mirror (Inspired by Screenshot 3) -->
+        <div class="flex flex-wrap items-center justify-center gap-2 mt-3">
+          <span class="px-3.5 py-1 rounded-full bg-white/95 border border-pink-200 text-xs font-extrabold text-[#d65a7b] shadow-xs">
+            I believe in you!
+          </span>
+          <span class="px-3 py-1 rounded-full bg-white/95 border border-pink-200 text-xs font-extrabold text-[#d65a7b] shadow-xs">
+            ≥ω≤
+          </span>
+          <span class="px-3.5 py-1 rounded-full bg-white/95 border border-pink-200 text-xs font-extrabold text-roseInk shadow-xs">
+            Always your best friend 🤍
+          </span>
+        </div>
+      </div>
+
+      <!-- Sincere, Heartfelt Letter Card -->
+      <div class="mt-5 bg-white/95 rounded-3xl p-5 border-2 border-pink-200 shadow-[0_10px_28px_rgba(156,45,72,0.12)]">
+        <div class="text-center border-b border-pink-100 pb-3.5 mb-4">
+          <h1 class="font-serif text-2xl font-bold text-roseInk leading-snug">
+            Happy Princess Day, Janvi
+          </h1>
+          <p class="font-serif italic text-xs text-[#9c5266] mt-1">
+            Stronger, kinder &amp; brighter than any fairytale 👑
+          </p>
+        </div>
+
+        <!-- Handwritten Sincere Message Addressing Her Feelings -->
+        <div class="font-hand text-[21px] leading-[1.45] text-[#4e1d2b] space-y-3.5">
+          <p>
+            Janvi, I know you’re sad with me right now, and it hurts knowing you’re comparing me with the people who broke your trust in the past.
+          </p>
+          <p>
+            Please hear me from my heart—<span class="underline decoration-pink-400 decoration-2 font-bold text-roseInk">I am not like them.</span> I know how heavy it feels when people let you down, and I would never treat your trust carelessly or walk away when things get tough. You don’t have to guard your heart from me.
+          </p>
+          <p>
+            More than anything, I admire the woman you are becoming. You want to stand on your own feet, build your own identity, and be a <span class="font-bold text-roseInk">strong, independent woman</span>—and I’m so proud of you for that. You don’t need anyone to rescue you because you’re strong enough to build your own empire.
+          </p>
+          <p>
+            I just want to be the best friend walking beside you—cheering the loudest for your dreams, supporting every step you take, and reminding you on hard days that you are never alone.
+          </p>
+        </div>
+
+        <!-- Signature & Promise Box -->
+        <div class="mt-5 pt-4 border-t border-dashed border-pink-200 flex items-center justify-between gap-2">
+          <div>
+            <p class="font-hand text-xl font-bold text-roseInk">Always in your corner,</p>
+            <p class="text-[11px] font-bold text-[#8d4b5e]">Your Best Friend 🌷</p>
+          </div>
+
+          <button
+            id="sendHugBtn"
+            type="button"
+            class="px-4 py-2.5 rounded-2xl bg-gradient-to-r from-[#e87a96] to-[#b92b27] text-white text-xs font-extrabold shadow-sm active:scale-95 transition flex items-center gap-1.5"
+          >
+            <span>Forgive &amp; Smile?</span>
+            <span>🤍✨</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================== -->
+    <!-- MODAL POPUP FOR ENVELOPE ITEMS                                      -->
+    <!-- =================================================================== -->
+    <div id="itemModal" class="hidden fixed inset-0 z-50 bg-black/45 backdrop-blur-xs flex items-center justify-center p-5">
+      <div class="w-full max-w-[360px] bg-white rounded-3xl p-5 border-2 border-pink-200 shadow-2xl relative text-center">
+        <button
+          id="closeModalBtn"
+          type="button"
+          class="w-8 h-8 rounded-full bg-pink-100 text-roseInk font-extrabold text-sm absolute top-3.5 right-3.5 flex items-center justify-center"
+          aria-label="Close popup"
+        >
+          ✕
+        </button>
+        <div id="modalBodyContent"></div>
+      </div>
+    </div>
+
+    <!-- Cute Toast Pill -->
+    <div id="cuteToast" class="pointer-events-none fixed bottom-5 left-1/2 -translate-x-1/2 z-50 opacity-0 translate-y-3 transition-all duration-300">
+      <div class="px-4 py-2 rounded-full bg-roseInk text-white text-xs font-bold shadow-lg whitespace-nowrap">
+        <span id="cuteToastMsg">Always cheering for you, Janvi 🌷</span>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    // =========================================================================
+    // 1. FLOATING PARTICLES, HEART BURSTS & CUTE TOAST NOTIFICATIONS
+    // =========================================================================
+    const floatingParticlesLayer = document.getElementById('floatingParticlesLayer');
+    const cuteToast = document.getElementById('cuteToast');
+    const cuteToastMsg = document.getElementById('cuteToastMsg');
+    let toastTimer = null;
+
+    function showCuteToast(message) {
+      if (!cuteToast || !cuteToastMsg) return;
+      cuteToastMsg.textContent = message;
+      cuteToast.classList.remove('opacity-0', 'translate-y-3');
+      cuteToast.classList.add('opacity-100', 'translate-y-0');
+
+      if (toastTimer) clearTimeout(toastTimer);
+      toastTimer = setTimeout(() => {
+        cuteToast.classList.remove('opacity-100', 'translate-y-0');
+        cuteToast.classList.add('opacity-0', 'translate-y-3');
+      }, 2800);
+    }
+
+    function burstHearts(count = 16) {
+      if (!floatingParticlesLayer) return;
+      const icons = ['💗', '✨', '🌷', '👑', '🤍', '⭐'];
+      for (let i = 0; i < count; i++) {
+        const el = document.createElement('span');
+        el.textContent = icons[Math.floor(Math.random() * icons.length)];
+        el.style.position = 'absolute';
+        el.style.left = `${8 + Math.random() * 84}%`;
+        el.style.bottom = `${10 + Math.random() * 25}%`;
+        el.style.fontSize = `${14 + Math.random() * 14}px`;
+        el.style.pointerEvents = 'none';
+        el.style.zIndex = '35';
+        el.style.opacity = '1';
+        el.style.transition = `transform ${1.4 + Math.random() * 0.9}s cubic-bezier(0.22, 1, 0.36, 1), opacity 1.6s ease-out`;
+
+        floatingParticlesLayer.appendChild(el);
+
+        const driftX = (Math.random() - 0.5) * 110;
+        const riseY = -(180 + Math.random() * 240);
+        const rotateDeg = (Math.random() - 0.5) * 60;
+
+        requestAnimationFrame(() => {
+          el.style.transform = `translate(${driftX}px, ${riseY}px) rotate(${rotateDeg}deg) scale(1.15)`;
+          el.style.opacity = '0';
+        });
+
+        setTimeout(() => {
+          if (el.parentNode) el.parentNode.removeChild(el);
+        }, 2300);
+      }
+    }
+
+    // =========================================================================
+    // 2. OFFICIAL YOUTUBE IFRAME PLAYER API ("Dilruba Dilnasheen" - BCqgqH2EWTw)
+    // =========================================================================
+    let ytPlayer = null;
+    let isYtReady = false;
+    let isSongPlaying = false;
+    let pendingPlayOnReady = false;
+
+    const musicBar = document.getElementById('musicBar');
+    const musicToggleBtn = document.getElementById('musicToggleBtn');
+    const musicPlayIcon = document.getElementById('musicPlayIcon');
+    const musicPlayLabel = document.getElementById('musicPlayLabel');
+    const musicSubtitle = document.getElementById('musicSubtitle');
+    const reelLeft = document.getElementById('reelLeft');
+    const reelRight = document.getElementById('reelRight');
+
+    function syncPlayerUI(playing) {
+      isSongPlaying = playing;
+      if (playing) {
+        musicPlayIcon.textContent = '❚❚';
+        musicPlayLabel.textContent = 'Pause';
+        musicSubtitle.textContent = 'Playing • Tap to pause';
+        reelLeft.classList.add('animate-spin-reel');
+        reelRight.classList.add('animate-spin-reel');
+      } else {
+        musicPlayIcon.textContent = '▶';
+        musicPlayLabel.textContent = 'Play';
+        musicSubtitle.textContent = 'Tap to play song • For Janvi';
+        reelLeft.classList.remove('animate-spin-reel');
+        reelRight.classList.remove('animate-spin-reel');
+      }
+    }
+
+    // Load YouTube IFrame Player API asynchronously
+    const ytScriptTag = document.createElement('script');
+    ytScriptTag.src = 'https://www.youtube.com/iframe_api';
+    const firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(ytScriptTag, firstScriptTag);
+
+    window.onYouTubeIframeAPIReady = function () {
+      ytPlayer = new YT.Player('ytDilrubaPlayer', {
+        height: '1',
+        width: '1',
+        videoId: 'BCqgqH2EWTw',
+        playerVars: {
+          autoplay: 0,
+          loop: 1,
+          playlist: 'BCqgqH2EWTw',
+          start: 0,
+          playsinline: 1,
+          controls: 0,
+          rel: 0,
+          modestbranding: 1,
+        },
+        events: {
+          onReady: function (event) {
+            isYtReady = true;
+            event.target.setVolume(100);
+            if (pendingPlayOnReady) {
+              pendingPlayOnReady = false;
+              event.target.unMute();
+              event.target.playVideo();
+            }
+          },
+          onStateChange: function (event) {
+            if (event.data === YT.PlayerState.PLAYING) {
+              syncPlayerUI(true);
+            } else if (
+              event.data === YT.PlayerState.PAUSED ||
+              event.data === YT.PlayerState.ENDED
+            ) {
+              syncPlayerUI(false);
+            }
+          },
+          onError: function () {
+            musicSubtitle.textContent = 'Tap Play to start song 🎵';
+          },
+        },
+      });
+    };
+
+    function startSong() {
+      if (isYtReady && ytPlayer && typeof ytPlayer.playVideo === 'function') {
+        try {
+          ytPlayer.unMute();
+          ytPlayer.setVolume(100);
+          ytPlayer.playVideo();
+          syncPlayerUI(true);
+        } catch (err) {
+          pendingPlayOnReady = true;
+        }
+      } else {
+        pendingPlayOnReady = true;
+        musicSubtitle.textContent = 'Loading song... 🎵';
+      }
+    }
+
+    function pauseSong() {
+      pendingPlayOnReady = false;
+      if (isYtReady && ytPlayer && typeof ytPlayer.pauseVideo === 'function') {
+        try {
+          ytPlayer.pauseVideo();
+        } catch (err) {
+          // Ignore pause errors if player is mid-transition
+        }
+      }
+      syncPlayerUI(false);
+    }
+
+    musicToggleBtn.addEventListener('click', () => {
+      if (isSongPlaying) {
+        pauseSong();
+        showCuteToast('Dilruba Dilnasheen paused ⏸️');
+      } else {
+        startSong();
+        showCuteToast('Playing Dilruba Dilnasheen 🎵');
+      }
+    });
+
+    // =========================================================================
+    // 3. SCREEN TRANSITIONS & LOGIN GATE (janvi / 0811)
+    // =========================================================================
+    const screenLogin = document.getElementById('screenLogin');
+    const screenBouquet = document.getElementById('screenBouquet');
+    const screenEnvelope = document.getElementById('screenEnvelope');
+    const screenMirrorLetter = document.getElementById('screenMirrorLetter');
+
+    function showScreen(targetScreen) {
+      [screenLogin, screenBouquet, screenEnvelope, screenMirrorLetter].forEach((s) => {
+        s.classList.add('hidden');
+      });
+      targetScreen.classList.remove('hidden');
+    }
+
+    const loginForm = document.getElementById('loginForm');
+    const loginCardBox = document.getElementById('loginCardBox');
+    const loginUsername = document.getElementById('loginUsername');
+    const loginPassword = document.getElementById('loginPassword');
+    const loginHintBtn = document.getElementById('loginHintBtn');
+    const loginHintText = document.getElementById('loginHintText');
+    const loginErrorText = document.getElementById('loginErrorText');
+
+    loginHintBtn.addEventListener('click', () => {
+      loginHintText.classList.toggle('hidden');
+    });
+
+    loginForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const user = loginUsername.value.trim().toLowerCase();
+      const pass = loginPassword.value.trim();
+
+      if (user === 'janvi' && pass === '0811') {
+        loginErrorText.classList.add('hidden');
+        musicBar.classList.remove('hidden');
+        burstHearts(20);
+        showScreen(screenBouquet);
+        showCuteToast('Welcome Janvi! Your song is ready 🎵');
+      } else {
+        loginErrorText.classList.remove('hidden');
+        loginCardBox.classList.remove('animate-shake');
+        void loginCardBox.offsetWidth;
+        loginCardBox.classList.add('animate-shake');
+      }
+    });
+
+    // Screen 1 -> Screen 2
+    document.getElementById('goToEnvelopeBtn').addEventListener('click', () => {
+      burstHearts(16);
+      showScreen(screenEnvelope);
+    });
+
+    // Screen 2 -> Screen 3
+    document.getElementById('openMirrorPageBtn').addEventListener('click', () => {
+      burstHearts(18);
+      showScreen(screenMirrorLetter);
+    });
+
+    // Screen 3 -> Screen 2
+    document.getElementById('backToEnvelopeBtn').addEventListener('click', () => {
+      showScreen(screenEnvelope);
+    });
+
+    // =========================================================================
+    // 4. INTERACTIVE ENVELOPE ITEMS & POPUP MODAL
+    // =========================================================================
+    const itemModal = document.getElementById('itemModal');
+    const modalBodyContent = document.getElementById('modalBodyContent');
+    const closeModalBtn = document.getElementById('closeModalBtn');
+
+    function openItemModal(htmlContent) {
+      modalBodyContent.innerHTML = htmlContent;
+      itemModal.classList.remove('hidden');
+    }
+
+    closeModalBtn.addEventListener('click', () => {
+      itemModal.classList.add('hidden');
+    });
+
+    itemModal.addEventListener('click', (e) => {
+      if (e.target === itemModal) {
+        itemModal.classList.add('hidden');
+      }
+    });
+
+    // Item 1: Watercolor Princess Card -> Opens full size card preview
+    document.getElementById('envItemWatercolor').addEventListener('click', () => {
+      burstHearts(14);
+      openItemModal(`
+        <div class="w-full max-h-[360px] rounded-2xl overflow-hidden border-2 border-amber-300 shadow-md mb-2 bg-amber-50">
+          <img src="image_50e104.jpg" alt="Princess Watercolor Card" class="w-full h-full object-contain" />
+        </div>
+        <h3 class="font-serif text-lg font-bold text-roseInk">Hey Princess! 👑</h3>
+        <p class="font-hand text-lg text-[#5e2334] mt-1">
+          You are beautiful, precious and deserve all the happiness in the world.
+        </p>
+      `);
+    });
+
+    // Item 2: Rose -> Opens sweet reassurance note
+    document.getElementById('envItemRose').addEventListener('click', () => {
+      burstHearts(12);
+      openItemModal(`
+        <div class="text-4xl mb-2">🌷</div>
+        <h3 class="font-serif text-xl font-bold text-roseInk">A Little Reminder</h3>
+        <p class="font-hand text-xl text-[#5e2334] mt-2 leading-snug">
+          “Even on days when you feel low or doubtful, remember you have a best friend who will never break your trust.”
+        </p>
+      `);
+    });
+
+    // Item 3: Cassette -> Toggles Dilruba Dilnasheen & shows cassette card
+    document.getElementById('envItemCassette').addEventListener('click', () => {
+      if (!isSongPlaying) {
+        startSong();
+        showCuteToast('Playing Dilruba Dilnasheen 🎵');
+      } else {
+        showCuteToast('Dilruba Dilnasheen is playing for you 💗');
+      }
+      openItemModal(`
+        <div class="w-24 h-16 mx-auto mb-3 rounded-xl bg-gradient-to-r from-[#f7a8c4] to-[#e87ea4] border-2 border-[#4a1c2a] flex items-center justify-around px-3">
+          <span class="w-5 h-5 rounded-full bg-white border-2 border-[#4a1c2a] animate-spin-reel"></span>
+          <span class="w-5 h-5 rounded-full bg-white border-2 border-[#4a1c2a] animate-spin-reel"></span>
+        </div>
+        <h3 class="font-serif text-lg font-bold text-roseInk">Dilruba Dilnasheen 🎵</h3>
+        <p class="text-[11px] font-bold text-[#9c5266] mt-0.5">Rito Riba &amp; Siddhant Kaushal</p>
+        <p class="text-xs text-[#7d4253] mt-2 leading-relaxed">
+          Dedicated to the girl who deserves every soft melody and all the peace in the world.
+        </p>
+        <div class="mt-4 flex items-center justify-center gap-2">
+          <button type="button" id="modalToggleSongBtn" class="px-4 py-2 rounded-xl bg-pink-100 text-roseInk text-xs font-extrabold">
+            ${isSongPlaying ? '❚❚ Pause Song' : '▶ Play Song'}
+          </button>
+          <button type="button" onclick="document.getElementById('itemModal').classList.add('hidden')" class="px-4 py-2 rounded-xl bg-roseInk text-white text-xs font-bold">
+            Keep Listening 💗
+          </button>
+        </div>
+      `);
+      setTimeout(() => {
+        const modalSongBtn = document.getElementById('modalToggleSongBtn');
+        if (modalSongBtn) {
+          modalSongBtn.addEventListener('click', () => {
+            if (isSongPlaying) {
+              pauseSong();
+              modalSongBtn.textContent = '▶ Play Song';
+            } else {
+              startSong();
+              modalSongBtn.textContent = '❚❚ Pause Song';
+            }
+          });
+        }
+      }, 20);
+    });
+
+    // Item 4: Portrait Sketch Polaroid -> Opens full sketch preview + button to letter
+    document.getElementById('envItemPhoto').addEventListener('click', () => {
+      burstHearts(15);
+      openItemModal(`
+        <div class="w-48 h-56 mx-auto rounded-2xl overflow-hidden border-4 border-pink-200 shadow-md mb-3">
+          <img src="WhatsApp Image 2026-11-11 at 5.09.50 PM.jpeg" alt="Janvi's Sketch" class="w-full h-full object-cover object-top" />
+        </div>
+        <h3 class="font-serif text-lg font-bold text-roseInk">The Strongest Princess 👑</h3>
+        <p class="font-hand text-lg text-[#5e2334] mt-1">
+          Future independent woman &amp; my favorite person to cheer for!
+        </p>
+        <button type="button" id="modalReadLetterBtn" class="mt-3 w-full py-2.5 rounded-xl bg-gradient-to-r from-[#e87a96] to-[#b92b27] text-white text-xs font-extrabold">
+          Read Your Full Letter 📜
+        </button>
+      `);
+      setTimeout(() => {
+        const btn = document.getElementById('modalReadLetterBtn');
+        if (btn) {
+          btn.addEventListener('click', () => {
+            itemModal.classList.add('hidden');
+            showScreen(screenMirrorLetter);
+          });
+        }
+      }, 20);
+    });
+
+    // Final Smile / Support Button on Letter Card
+    document.getElementById('sendHugBtn').addEventListener('click', () => {
+      burstHearts(26);
+      showCuteToast('Always with you, Princess Janvi 🤍👑');
+    });
+  </script>
+</body>
+</html>
